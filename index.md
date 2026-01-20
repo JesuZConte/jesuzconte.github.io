@@ -1,5 +1,5 @@
-Here you can say lots of fun things about your site.
+Who am I?
 
-Maybe say a some things about yourself.
+I am so many things! But one of them, is being a Software developer. Everyday I find new challenges, and I thought it would be great to document them. Who knows, maybe you're going through the same?
 
-Or maybe what you plan to blog about.
+
