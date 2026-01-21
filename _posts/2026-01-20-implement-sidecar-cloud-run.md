@@ -443,7 +443,6 @@ cpu: 2          # May need to increase if sidecar requires more CPU
 1. ✅ `deploy/run/runtime-config.yaml.erb` - Add sidecar configuration
 2. ✅ `deploy/run/environment.yaml.erb` - Change OTEL endpoints to point to sidecar
 3. ✅ `Dockerfile` - Ensure Java agent is properly configured (already done)
-4. ✅ `start.sh` - Verify agent startup (already done)
 ---
 ## References
 
