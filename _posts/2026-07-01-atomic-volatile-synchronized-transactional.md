@@ -70,8 +70,34 @@ Conceptually, Spring's @Transactional annotation feels a lot like synchronized b
 
 - The Philosophy: It provides global, distributed data consistency. Even if you scale your app across 5 different servers, synchronized becomes useless because it's local to one server, but @Transactional remains bulletproof because the synchronization happens directly at the database level.
 
-...
+-----------
 *The Golden Rule:* Use Atomic or volatile for lightweight, single-variable thread safety. Use synchronized when coordinating multiple variables inside your Java app. Use @Transactional whenever you are dealing with state consistency across a database.
+
+<style>
+  /* Fuerza que la tabla de este post se vea perfecta sin depender de archivos CSS externos */
+  .post-content table, .markdown-body table, article table, main table, table {
+    display: table !important;
+    width: 100% !important;
+    border-collapse: collapse !important;
+    margin: 24px 0 !important;
+  }
+  
+  table th, table td {
+    padding: 12px 15px !important;
+    border: 1px solid #d0d7de !important;
+    text-align: left !important;
+  }
+  
+  table th {
+    background-color: #f6f8fa !important;
+    color: #24292f !important;
+    font-weight: 600 !important;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #f8f9fa !important;
+  }
+</style>
 
 Summary Cheat-Sheet for your code
 | Tool | Target | Enforcement Level | Strategy |
