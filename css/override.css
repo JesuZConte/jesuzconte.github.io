@@ -61,7 +61,7 @@ table th, table td {
 }
 
 table th {
-  background-color: #f6f8fa; /* Fondo gris claro para el encabezado */
+  background-color: #f6f8fa !important; /* Fondo gris claro para el encabezado */
   color: #24292f;
   font-weight: 600;
 }
