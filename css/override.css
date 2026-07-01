@@ -43,3 +43,33 @@ hr {
   font-size: 2.5em;
   opacity: 0.3;
 }
+
+/* Custom table styles for Markdown posts */
+table {
+  display: table; /* Cambiado de block a table para que ocupe el 100% si el contenedor es amplio */
+  width: 100%;
+  border-collapse: collapse;
+  margin: 24px 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+
+table th, table td {
+  padding: 12px 15px;
+  border: 1px solid #d0d7de; /* Bordes sutiles estilo GitHub */
+  text-align: left;
+}
+
+table th {
+  background-color: #f6f8fa; /* Fondo gris claro para el encabezado */
+  color: #24292f;
+  font-weight: 600;
+}
+
+table tr:nth-child(even) {
+  background-color: #f8f9fa; /* Efecto cebra para leer filas largas más fácil */
+}
+
+table tr:hover {
+  background-color: #f0f3f6; /* Pequeño efecto visual al pasar el mouse */
+}
