@@ -100,6 +100,7 @@ Conceptually, Spring's @Transactional annotation feels a lot like synchronized b
 </style>
 
 Summary Cheat-Sheet for your code
+
 | Tool | Target | Enforcement Level | Strategy |
 | :--- | :--- | :--- | :--- |
 | **`AtomicInteger`** | Single Variable | Hardware / CPU Level | **Optimistic:** Non-blocking retry loop. Ultra-fast. |
