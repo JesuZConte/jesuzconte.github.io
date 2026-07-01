@@ -81,3 +81,5 @@ Summary Cheat-Sheet for your code
 | **`synchronized`** | Code Block / Object | JVM / Operating System Level | **Pessimistic:** Suspends threads, uses heavy OS context switches. |
 | **`@Transactional`** | Method / Database | Framework (Spring Proxy) / SQL | **ACID Compliance:** Ensures database operations Commit or Rollback together. |
 
+
+
