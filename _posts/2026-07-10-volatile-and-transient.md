@@ -66,7 +66,7 @@ They reset to their default primitive or object value:
 
 - Booleans will return as false.
 
-#### Quick Cheat-Sheet
+#### Quick Cheat-Sheet
 - volatile: Tells the compiler and CPU: "Do not store this variable in the processor's local cache. Always read it directly from the main RAM because multiple threads are mutating it concurrently."
 
 - transient: Tells Java's serialization engine: "Do not save this variable to disk or the network. Skip it entirely because it is temporary, sensitive, or dynamic."
