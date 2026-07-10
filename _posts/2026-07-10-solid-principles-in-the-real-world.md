@@ -58,7 +58,7 @@ Your business-layer orchestration service (`CheckoutService`) should never direc
 
 ---
 
-### Summary Cheat-Sheet for Interviews
+### Summary Cheat-Sheet
 
 | Principle | Core Meaning | E-Commerce Misstep (Anti-pattern) | Clean Architectural Fix |
 | :--- | :--- | :--- | :--- |
