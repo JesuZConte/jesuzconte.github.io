@@ -90,3 +90,12 @@ When a consumer component (like an API Gateway or another internal service) need
 | **Primary Design Focus** | Optimized strictly for high-availability Service Registry and Discovery. | Full-featured Service Mesh, Key-Value configuration store, and health-checking engine. |
 | **CAP Theorem Target** | **AP (Available / Partition Tolerant):** Prefers serving stale routing data rather than denying a lookup query during a network split. | **CP (Consistent / Partition Tolerant):** Prioritizes perfect synchronization; queries will fail if the registry nodes lose quorum. |
 | **Ecosystem Fit** | Seamless, out-of-the-box integration via `spring-cloud-starter-netflix-eureka-server`. | Polyglot native. Requires independent external agent processes running inside service nodes. |
+
+### Technology Matrix for System Design: API Gateways
+
+| Feature Vector | Spring Cloud Gateway | Enterprise Proxies (Kong / Apigee) | Google Cloud ESP (Endpoints) |
+| :--- | :--- | :--- | :--- |
+| **Engine Foundation** | Reactive & Non-blocking (built on Spring WebFlux). | High-performance C/Lua-based proxy layers (built on Nginx). | High-performance lightweight container proxy (built on Nginx). |
+| **Ecosystem Fit** | Deep, native integration with Java Spring Boot. | Polyglot-friendly, completely agnostic to the underlying backend language. | Native to Google Cloud Platform (GCP), designed for Cloud Run, GKE, or Compute Engines. |
+| **Security Handling** | Custom filters in Java code (`GlobalFilter`). | Dedicated plugins managed via API Manager Dashboard. | Native validation of API Keys and Firebase/Auth0 JWT tokens via YAML configuration. |
+| **Best Used For** | Pure Java/Spring enterprise microservice backend clusters. | Complex multi-cloud enterprise networks or public API Monetization. | Fast, cloud-native managed APIs running inside Google Cloud infrastructure. |
