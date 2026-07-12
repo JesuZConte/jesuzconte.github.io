@@ -27,3 +27,12 @@ In high-scale enterprise ecosystems, thousands of concurrent transactions intera
 
 #### 4. Durability ("Written in Stone")
 Durability guarantees that once a transaction successfully completes (`COMMIT`), its mutations are permanently recorded to non-volatile physical disk storage. Even if the server cluster experiences an immediate power outage or complete operating system crash, the database recovers the state upon reboot using internal transaction logs (such as the *Write-Ahead Log / WAL*).
+
+### Summary Matrix: The ACID Properties
+
+| Property Element | Core Definition | Core Technical Purpose |
+| :--- | :--- | :--- |
+| **`A` - Atomicity** | **All or Nothing.** | Prevents partial, fragmented data writes if an unexpected failure occurs mid-transaction. |
+| **`C` - Consistency** | **Rule Enforcement.** | Guarantees that schema boundaries, constraints, and relational integrity rules are never breached. |
+| **`I` - Isolation** | **Concurrency Guard.** | Prevents active concurrent transactions from reading or mutating each other's uncommitted interim states. |
+| **`D` - Durability** | **Permanent Record.** | Guarantees that committed records survive hardware failures, system crashes, or infrastructure reboots. |
