@@ -85,3 +85,14 @@ The Bean enters the active pool, servicing application requests as a stable, imm
 | **AOP Integration** | Requires explicit, manual proxy configuration logic. | Native, seamless integration with Spring AOP and `@Aspect` annotations. |
 | **Enterprise Features** | None. Purely acts as a configuration registry and dependency factory. | Supports Internationalization (i18n), Event Publication, and Web Contexts. |
 | **Usage Recommendation** | Legacy/Deprecated for standard web apps. Use only in resource-constrained environments. | The absolute de facto standard for modern Enterprise Microservices and Spring Boot web apps. |
+
+### Summary of Spring Bean Scopes
+
+| Bean Scope | Environment | Lifecycle Horizon | Primary Enterprise Use Case |
+| :--- | :--- | :--- | :--- |
+| **`singleton`** | Core (Any) | One instance per IoC `ApplicationContext`. | Stateless services, repositories, and utility configurations. |
+| **`prototype`** | Core (Any) | A brand-new instance every time it is requested. | State-heavy, non-thread-safe local processing components. |
+| **`request`** | Web Only | One instance per individual HTTP request lifecycle. | Storing request-specific metadata (e.g., API tracing context). |
+| **`session`** | Web Only | One instance per active HTTP user session. | Maintaining stateful user profiles or server-side shopping carts. |
+| **`application`**| Web Only | One instance per global `ServletContext`. | Global web assets, feature toggles, or cross-context shared states. |
+| **`websocket`** | Web Only | Tied strictly to the active lifecycle of a WebSocket. | Real-time chat configurations or active streaming room states. |
