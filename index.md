@@ -1,5 +1,5 @@
-Who am I?
+My Technical Diary
 
-I am so many things! But one of them, is being a Software developer. Everyday I find new challenges, and I thought it would be great to document them. Who knows, maybe you're going through the same?
+As a Software developer, I find new challenges every single day, and I thought it would be great to document them. Who knows, maybe you're going through the same?
 
 
